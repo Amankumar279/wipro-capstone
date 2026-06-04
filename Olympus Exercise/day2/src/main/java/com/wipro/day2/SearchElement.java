@@ -1,0 +1,28 @@
+package com.wipro.day2;
+
+import java.util.Scanner;
+
+public class SearchElement {
+
+	public static void main(String[] args) {
+		System.out.println("enter the size of array");
+		Scanner sc =new Scanner(System.in);
+		int size=sc.nextInt();
+		int arr[]=new int[size];
+		
+		System.out.println("enter array elment");
+		for(int i=0;i<arr.length;i++) {
+			arr[i]=sc.nextInt();
+			}
+		
+		System.out.println("enter the ele u want to search");
+		 int k=sc.nextInt();
+		for(int i=0;i<arr.length;i++) {
+			if(k==arr[i]) {
+				System.out.println("element is at index " +i);
+			}
+		}
+
+	}
+
+}
